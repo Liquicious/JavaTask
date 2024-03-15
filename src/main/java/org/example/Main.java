@@ -6,6 +6,7 @@ public class Main {
         TestClass test = new TestClass();
 
         test.show();
+
         System.out.println("-----------------");
 
         gen.generate(test);
