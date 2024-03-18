@@ -3,12 +3,12 @@ package org.example;
 import java.lang.reflect.Field;
 import java.lang.management.ManagementFactory;
 
-public class fieldGenerator {
+public class FieldGenerator {
     private static long m = (long)Math.pow(2, 31);
     private static long a = 1103515245;
     private static long c = 12345;
     private long seed;
-    public fieldGenerator()
+    public FieldGenerator()
     {
         this.seed = ManagementFactory.getRuntimeMXBean().getStartTime();
     }
@@ -16,7 +16,7 @@ public class fieldGenerator {
     {
         seed = (a * seed + c) % m;
     }
-    public <T> void generate(T inputClass)
+    public <T> void generateFields(T inputClass)
     {
         Field[] classFields = inputClass.getClass().getDeclaredFields();
         for (Field classField : classFields)

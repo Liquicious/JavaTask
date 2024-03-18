@@ -23,7 +23,7 @@ public class TestClass {
         ch = 'a';
         st = "string";
     }
-    public void show()
+    public void showFields()
     {
         System.out.println(bo);
         System.out.println(by);

@@ -2,14 +2,14 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        fieldGenerator gen = new fieldGenerator();
+        FieldGenerator gen = new FieldGenerator();
         TestClass test = new TestClass();
 
-        test.show();
+        test.showFields();
 
         System.out.println("-----------------");
 
-        gen.generate(test);
-        test.show();
+        gen.generateFields(test);
+        test.showFields();
     }
 }
