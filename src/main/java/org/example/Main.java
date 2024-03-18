@@ -2,7 +2,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Generator gen = new Generator();
+        fieldGenerator gen = new fieldGenerator();
         TestClass test = new TestClass();
 
         test.show();

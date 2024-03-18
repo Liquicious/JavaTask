@@ -3,12 +3,12 @@ package org.example;
 import java.lang.reflect.Field;
 import java.lang.management.ManagementFactory;
 
-public class Generator {
+public class fieldGenerator {
     private static long m = (long)Math.pow(2, 31);
     private static long a = 1103515245;
     private static long c = 12345;
     private long seed;
-    public Generator()
+    public fieldGenerator()
     {
         this.seed = ManagementFactory.getRuntimeMXBean().getStartTime();
     }
